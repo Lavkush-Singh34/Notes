@@ -9,3 +9,15 @@ while true; do
     sleep 1
 done
 ```
+# Why
+```javaScript
+intervalID = setInterval(()=>{
+console.log(Math.floor(Math.random()*16),intervalID)
+},1000)
+
+setTimeout(()=>{clearInterval(intervalID)
+               console.log('interval cleard', intervalID)},1000)
+```
+
+![setInterval](./why_1.png)
+
